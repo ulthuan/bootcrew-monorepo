@@ -2,7 +2,7 @@ FROM scratch AS ctx
 
 COPY ../shared/ /shared
 
-FROM  docker.io/library/ubuntu:questing AS base
+FROM  docker.io/library/ubuntu:resolute AS base
 
 FROM base AS builder
 
