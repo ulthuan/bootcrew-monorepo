@@ -28,6 +28,6 @@ jobs:
       image-desc: "Experimental ubuntu-bootc POC image"
       image-keywords: "bootc,ubuntu"
       image-logo: "https://avatars.githubusercontent.com/u/230667510?s=400&u=cb912a5db49aee164a609a0fb4967d2d8170feb9&v=4"
-      platforms: amd64,arm64
+      platforms: amd64
       rechunk: ${{ github.event_name != 'pull_request' && github.ref == format('refs/heads/{0}', github.event.repository.default_branch) }}
-      publish: ${{ github.event_name != 'pull_request' && github.ref == format('refs/heads/{0}', github.event.repository.default_branch) }}
+      publish: true
